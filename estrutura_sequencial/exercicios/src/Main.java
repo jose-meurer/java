@@ -124,7 +124,7 @@ public class Main {
 //        System.out.println("Resultado da soma: " + resultado);
 //
 //        sc.close();
-        
+
         /** Exercicio aula youtube **/
 //        Locale.setDefault(Locale.US);
 //        Scanner sc = new Scanner(System.in);
