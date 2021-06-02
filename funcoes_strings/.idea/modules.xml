@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/funcoesStrings.iml" filepath="$PROJECT_DIR$/funcoesStrings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funcoes_strings.iml" filepath="$PROJECT_DIR$/funcoes_strings.iml" />
     </modules>
   </component>
 </project>

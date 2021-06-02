@@ -13,7 +13,7 @@ public class Main {
         String s05 = original.substring(2, 9);
         String s06 = original.replace('a', 'x');
         String s07 = original.replace("abc", "xy");
-        int i = original.indexOf("bc");
+        int k = original.indexOf("bc");
         int j = original.lastIndexOf("bc");
 
         System.out.println("Original: -" + original + "-");
@@ -24,7 +24,7 @@ public class Main {
         System.out.println("substring(2, 9): -" + s05 + "-");
         System.out.println("replace('a', 'x'): -" + s06 + "-");
         System.out.println("replace('abc', 'xy'): -" + s07 + "-");
-        System.out.println("Index of 'bc': -" + i + "-");
+        System.out.println("Index of 'bc': -" + k + "-");
         System.out.println("Last index of 'bc': -" + j + "-");
 
         // Operacao split
@@ -44,8 +44,8 @@ public class Main {
         System.out.println(word4);
         System.out.println();
 
-        for (int i1 = 3; i1 >= 0; i1--) {
-            System.out.println(vect[i1]);
+        for (int i = 3; i >= 0; i--) {
+            System.out.println(vect[i]);
         }
         double xi = Math.PI;
         System.out.println(xi);
