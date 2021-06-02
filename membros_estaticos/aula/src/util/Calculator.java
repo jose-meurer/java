@@ -4,7 +4,6 @@ public class Calculator {
 
     public  final double PI = 3.14159;
 
-
     public  double circumference(double radius) {
         return 2.0 * PI * radius;
     }
