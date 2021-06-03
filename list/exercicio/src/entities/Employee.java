@@ -1,6 +1,5 @@
 package entities;
 
-import java.util.List;
 
 public class Employee {
 
@@ -8,7 +7,7 @@ public class Employee {
     private String name;
     private Double salary;
 
-    public  Employee(Integer id, String name, Double salary) {
+    public Employee(Integer id, String name, Double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -34,7 +33,7 @@ public class Employee {
         salary += salary * percentage / 100;
     }
 
-    public String toString(){
+    public String toString() {
         return id
                 + ", "
                 + name
