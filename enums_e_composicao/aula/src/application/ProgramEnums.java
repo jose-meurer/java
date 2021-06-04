@@ -5,7 +5,7 @@ import entities.enums.OrderStatus;
 
 import java.util.Date;
 
-public class Program {
+public class ProgramEnums {
 
     public static void main(String[] args) {
 
