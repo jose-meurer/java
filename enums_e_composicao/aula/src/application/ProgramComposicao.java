@@ -31,13 +31,13 @@ public class ProgramComposicao {
         System.out.print("Base salary: ");
         double baseSalary = sc.nextDouble();
         Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel),
-                        baseSalary, new Department(department, responsibleDepartment));
+                baseSalary, new Department(department, responsibleDepartment));
 
         System.out.println();
         System.out.print("How many contracts to his worker? ");
         int n = sc.nextInt();
 
-        for (int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             System.out.println();
             System.out.println("Enter contract #" + (i + 1) + " data: ");
             System.out.print("Date (DD/MM/YYY): ");

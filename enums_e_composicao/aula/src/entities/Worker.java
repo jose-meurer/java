@@ -82,15 +82,16 @@ public class Worker {
         }
         return sum;
     }
+
     @Override
-    public String toString(){
-     return "Name: "
-            + name
-            + "\n"
-            + "Department: "
-            + department.getName()
-            + "\n"
-            + "Responsible for the department: "
-            + department.getResponsible();
+    public String toString() {
+        return "Name: "
+                + name
+                + "\n"
+                + "Department: "
+                + department.getName()
+                + "\n"
+                + "Responsible for the department: "
+                + department.getResponsible();
     }
 }
