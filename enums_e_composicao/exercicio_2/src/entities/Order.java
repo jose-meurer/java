@@ -15,9 +15,9 @@ public class Order {
     private Client client;
     private List<OrderItem> items = new ArrayList<>();
 
-    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
-    public Order(){
+    public Order() {
     }
 
     public Order(Date moment, OrderStatus status, Client client) {
@@ -54,19 +54,33 @@ public class Order {
         return items;
     }
 
-    public void addItem(OrderItem item){
+    public void addItem(OrderItem item) {
         items.add(item);
     }
 
-    public void removeItem(OrderItem item){
+    public void removeItem(OrderItem item) {
         items.remove(item);
     }
 
-    public Double total(){
+    public Double total() {
         double sum = 0.0;
-        for (OrderItem item : items){
+        for (OrderItem item : items) {
             sum += item.subTotal();
         }
         return sum;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Order moment: " + sdf.format(moment) + "\n");
+        sb.append("Order status: " + status + "\n");
+        sb.append("Client: " + client + "\n");
+        sb.append("Order Items: \n");
+        for (OrderItem item : items) {
+            sb.append(item + "\n");
+        }
+        sb.append("Total price: $" + String.format("%.2f", total()) + "\n");
+        return sb.toString();
     }
 }
