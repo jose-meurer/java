@@ -9,7 +9,7 @@ public class Client {
     private String email;
     private Date birthDate;
 
-    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 
     public Client() {

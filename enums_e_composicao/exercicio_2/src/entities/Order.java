@@ -15,7 +15,7 @@ public class Order {
     private Client client;
     private List<OrderItem> items = new ArrayList<>();
 
-    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
     public Order() {
     }
@@ -50,9 +50,9 @@ public class Order {
         this.client = client;
     }
 
-    public List<OrderItem> getItems() {
-        return items;
-    }
+//    public List<OrderItem> getItems() {
+//        return items;
+//    }
 
     public void addItem(OrderItem item) {
         items.add(item);
@@ -61,6 +61,12 @@ public class Order {
     public void removeItem(OrderItem item) {
         items.remove(item);
     }
+
+//    public void showList(){
+//        for (OrderItem item : items){
+//            System.out.println(item);
+//        }
+//    }
 
     public Double total() {
         double sum = 0.0;
