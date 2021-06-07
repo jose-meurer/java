@@ -15,8 +15,8 @@ public class Program {
         Account acc1 = bacc;
         Account acc2 =  new BusinessAccount(1003, "Bob", 0.0, 200.0);
         System.out.println(acc2);
-        Account acc7 = acc2;
-        System.out.println(acc7);
+        Account acc6 = acc2;
+        System.out.println(acc6);
         System.out.println();
         
         Account acc3 = new SavingsAccount(1004, "Anna", 0.0, 0.01);
@@ -38,6 +38,22 @@ public class Program {
             acc5.updateBalance();
             System.out.println("Update!");
         }
+
+        System.out.println("------------------------------------------");
+
+        // Anotação @Override
+
+        Account acc7 = new Account(2001, "Alex", 1000.0);
+        acc7.withdraw(200.0);
+        System.out.println(acc7.getBalance());
+
+        Account acc8 = new SavingsAccount(2002, "Maria", 1000.0, 0.01);
+        acc8.withdraw(200.0); //Não tem a taxa de saque no valor de 5.0
+        System.out.println(acc8.getBalance());
+
+        Account acc9 = new BusinessAccount(2003, "José", 1000.0, 500.0);
+        acc9.withdraw(200.0);
+        System.out.println(acc9.getBalance());
     }
 }
 

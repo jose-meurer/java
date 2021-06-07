@@ -37,6 +37,7 @@ public class Account {
 
     public void withdraw(Double amount) {
         balance -= amount;
+        balance -= 5.0; // Taxa de saque
     }
 
     public void deposit(Double amount) {
@@ -45,6 +46,6 @@ public class Account {
 
     @Override
     public String toString(){
-        return holder + balance + "Account";
+        return holder + balance + " Account";
     }
 }
