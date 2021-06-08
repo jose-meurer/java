@@ -45,7 +45,7 @@ public class Account {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return holder + balance + " Account";
     }
 }

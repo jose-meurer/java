@@ -13,12 +13,12 @@ public class Program {
         // UPCASTING
 
         Account acc1 = bacc;
-        Account acc2 =  new BusinessAccount(1003, "Bob", 0.0, 200.0);
+        Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0);
         System.out.println(acc2);
         Account acc6 = acc2;
         System.out.println(acc6);
         System.out.println();
-        
+
         Account acc3 = new SavingsAccount(1004, "Anna", 0.0, 0.01);
 
         // DOWNCASTING
