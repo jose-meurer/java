@@ -1,7 +1,7 @@
 ### Meus estudos com Java
 
 
-#### Design Patterns Strategy
+#### Design Patterns Strategy:
 
 ![image](https://user-images.githubusercontent.com/75624436/121611330-606d1500-ca2e-11eb-9d6a-352a33698b6a.png)
 
