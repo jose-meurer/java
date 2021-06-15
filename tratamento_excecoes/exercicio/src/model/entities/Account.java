@@ -45,13 +45,16 @@ public class Account {
     }
 
     public void withdraw(Double amount) {
+        validateWithdraw(amount);
+        this.balance -= amount;
+    }
+
+    private void validateWithdraw(double amount) {
         if (amount > withdrawLimit) {
             throw new DomainExcpetion("The amount exceeds withdraw limit");
         }
         if (amount > balance) {
             throw new DomainExcpetion("Not enough balance");
         }
-        this.balance -= amount;
     }
-
 }
