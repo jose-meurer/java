@@ -16,7 +16,7 @@ public class Program4 {
         String path = "D:\\workspace\\Projetos\\Curso_Udemy_Java_Nelio_Alves\\trabalhando_com_arquivos\\aula\\out.txt";
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) {
-            // Apenas path, cria ou recria o arquivo || Colocando path, true, acrescenta no final do arquivo.
+            // Apenas path, cria ou recria o arquivo || Colocando path, true, cria ou acrescenta no final do arquivo.
             for (String line : lines) {
                 bw.write(line);
                 bw.newLine();
