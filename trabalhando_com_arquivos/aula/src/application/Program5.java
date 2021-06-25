@@ -23,7 +23,9 @@ public class Program5 {
         System.out.println();
         System.out.println("FILES: ");
         for (File file : files) {
-            System.out.println(file);
+            if (file.getName().endsWith(".txt")) { //retorna apenas arquivos com final .txt (Filtro)
+                System.out.println(file);
+            }
         }
 
         System.out.println();
