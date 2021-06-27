@@ -13,7 +13,7 @@ public class Contract {
 
     List<Installment> listInstallment = new ArrayList<>();
 
-//    public Contract(){
+    //    public Contract(){
 //    }
 //
     public Contract(Integer number, Date date, Double totalValue) {
@@ -50,11 +50,11 @@ public class Contract {
         return Collections.unmodifiableList(listInstallment); // retorna apenas leitura da lista
     }
 
-    public void addInstallment (Installment installment) {
+    public void addInstallment(Installment installment) {
         listInstallment.add(installment);
     }
 
-    public void removeInstallment (Installment installment) {
+    public void removeInstallment(Installment installment) {
         listInstallment.remove(installment);
     }
 }
