@@ -26,5 +26,4 @@ public class Installment {
     public Double getAmount() {
         return amount;
     }
-
 }

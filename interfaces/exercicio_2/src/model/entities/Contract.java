@@ -49,4 +49,12 @@ public class Contract {
     public List<Installment> getListInstallment() {
         return Collections.unmodifiableList(listInstallment); // retorna apenas leitura da lista
     }
+
+    public void addInstallment (Installment installment) {
+        listInstallment.add(installment);
+    }
+
+    public void removeInstallment (Installment installment) {
+        listInstallment.remove(installment);
+    }
 }
