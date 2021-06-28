@@ -9,7 +9,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Program {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -18,7 +18,18 @@ public class Program {
 
         System.out.print("Enter a file path: ");
         File sourceFile = new File(sc.nextLine());
+        if (sourceFile.isFile()){
+            System.out.println("Arquivo encontrado!!");
+            System.out.println();
+        } else if (sourceFile.isDirectory()) {
+            System.out.println("Favor inserir nome do arquivo");
+            sourceFile = new File(sourceFile + "\\" + sc.nextLine().trim());
+        } else {
+            System.out.println("Arquivo nao encontrado, abra o programa e tente novamente!");
+            System.exit(0);
+        }
         String sourceFolder = sourceFile.getParent();
+        Thread.sleep(2000);
 
 //        File[] files = sourceFile.listFiles(File::isFile);
 //        System.out.println();
