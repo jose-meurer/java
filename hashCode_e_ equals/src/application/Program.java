@@ -46,33 +46,44 @@ public class Program {
         List<Client> clients = new ArrayList<>();
 
         String name = "Jose";
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 1000; i++) {
             if (i % 2 != 0) {
                 name += "g";
             } else {
-                name +="k";
+                name += "k";
             }
             clients.add(new Client(name));
         }
 
         String search = "Josekgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgk";
 
-        int x = 0;
-        for (Client client : clients) {
-            if (client.getName().hashCode() == search.hashCode()) {
-                System.out.println("Está na posicao " + x + " da lista.");
-                if (client.getName().equals(search)) {
+//        int x = 0;
+//        for (Client client : clients) {
+//            if (client.getName().hashCode() == search.hashCode()) {
+//                System.out.println("Está na posicao " + x + " da lista.");
+
+//                if (client.getName().equals(search)) {
+//                    System.out.println("Equals confirma");
+//                }
+//            }
+//            x++;
+//        }
+
+        for (int i = 0; i < clients.size(); i++) {
+            if (clients.get(i).getName().hashCode() == search.hashCode()) {
+                System.out.println("Está na posicao " + i + " da lista.");
+
+                if (clients.get(i).getName().equals(search)) {
                     System.out.println("Equals confirma");
                 }
             }
-            x++;
         }
-        
+
 //        System.out.println("------------");
 //        int pos = 0;
 //        for (Client client : clients) {
 //            System.out.println("Posicao " + pos + ":  " + client.getName());
 //            pos++;
 //        }
+        }
     }
-}
