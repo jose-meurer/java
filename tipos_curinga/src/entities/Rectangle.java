@@ -1,6 +1,6 @@
 package entities;
 
-public class Rectangle implements Shape{
+public class Rectangle extends Intermediario{
 
     private double width;
     private double height;

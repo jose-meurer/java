@@ -31,6 +31,7 @@ public class ProgramCoringasDelimitados {
 
         Number x = list.get(0); //Consigo buscar
         //list.add(20); //Mas nao consigo inserir
+        // pq Number nao sabe se a lista é de Integer, Double, Float etc...
 
         //OPERACAO CONTRAVARIANCIA
         List<Object> myObjs = new ArrayList<>();
@@ -40,9 +41,11 @@ public class ProgramCoringasDelimitados {
         List<? super Number> myNums = myObjs; //Qualquer SUPER TIPO de Number
 
         myNums.add(10);
-        myNums.add(3.14); //Consigo inserir
+        myNums.add(3.14); // Consigo inserir
 
         //Number y = myNums.get(0); // Mas nao consigo buscar
+        // Nao consigo buscar pq o tipo da lista aceita Number ou super tipo de Number, Number é um Object mas um Object nao é um Number
+        // Se fosse Object y = myNums.get(0); daria certo.
 
         List<Integer> myInts = Arrays.asList(1, 2, 3, 4);
         List<Double> myDoubles = Arrays.asList(3.14, 6.28);

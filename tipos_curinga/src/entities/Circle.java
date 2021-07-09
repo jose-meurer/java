@@ -1,6 +1,6 @@
 package entities;
 
-public class Circle implements Shape {
+public class Circle extends Intermediario {
 
     private double radius;
 
