@@ -49,17 +49,30 @@ public class ProgramCoringasDelimitados {
 
 
         copy(myInts, myObjs);
-        System.out.println(myObjs);
+        showList(myObjs);
 
         copy(myDoubles, myObjs);
-        System.out.println(myObjs);
+        showList(myObjs);
 
         System.out.println(myObjs.get(3));
+
+        List<Number> nn = new ArrayList<>();
+        nn.add(9);
+        nn.add(3);
+
+        test(myDoubles, nn);
+        System.out.println(nn);
+    }
+
+    private static void test(List<? extends Double> source, List<? super Double> destiny) {
+        for (Double x : source) {
+            destiny.add(x);
+        }
     }
 
     private static void showList(List<?> list) {
         for (Object x : list) {
-            System.out.println(x + " ");
+            System.out.print(x + " ");
         }
         System.out.println();
     }
