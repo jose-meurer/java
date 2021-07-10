@@ -20,8 +20,8 @@ public class Program {
         System.out.println(a.hashCode());
         System.out.println(b.hashCode());
 
-        Client c1 = new Client("Maria", "maria@gmail.com");
-        Client c2 = new Client("Alex", "alex@gmail.com");
+        Client c1 = new Client("Maria", "maria@gmail.com", 45);
+        Client c2 = new Client("Alex", "alex@gmail.com", 12);
 
         System.out.println("------------");
         System.out.println(c1.hashCode());
@@ -52,7 +52,7 @@ public class Program {
             } else {
                 name += "k";
             }
-            clients.add(new Client(name));
+            clients.add(new Client(name, "null@null.com", null));
         }
 
         String search = "Josekgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgkgk";

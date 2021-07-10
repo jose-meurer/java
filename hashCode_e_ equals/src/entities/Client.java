@@ -2,20 +2,20 @@ package entities;
 
 import java.util.Objects;
 
-public class Client {
+public class Client implements IClient{
 
     private String name;
     private String email;
+    private Integer age;
 
-    public Client(String name) {
-        this.name = name;
-    }
 
-    public Client(String name, String email) {
+    public Client(String name, String email, Integer age) {
         this.name = name;
         this.email = email;
+        this.age = age;
     }
 
+    @Override
     public String getName() {
         return name;
     }
@@ -24,6 +24,7 @@ public class Client {
         this.name = name;
     }
 
+    @Override
     public String getEmail() {
         return email;
     }
@@ -33,15 +34,21 @@ public class Client {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Client client = (Client) o;
-        return Objects.equals(name, client.name);
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(name);
+    public String toString() {
+        return "Nome: "
+                + getName()
+                + "\nEmail: "
+                + getEmail()
+                + "\nIdade: "
+                + getAge();
     }
 }
