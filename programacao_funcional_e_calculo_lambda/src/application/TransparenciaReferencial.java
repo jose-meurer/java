@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class TransparenciaReferencial {
 
     // Exemplo de funcao que nao é referencialmente transparente
-    
+
     public static int globalValue = 3;
 
     public static void main(String[] args) {
