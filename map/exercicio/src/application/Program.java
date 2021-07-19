@@ -4,11 +4,16 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Program {
     public static void main(String[] args) {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("SSS");
+        Date now = new Date();
 
         Map<String, Integer> votesCandidate = new HashMap<>();
 
@@ -37,5 +42,15 @@ public class Program {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+
+        //Testando tempo de execucao do programa
+        Date after = new Date();
+
+        Integer n = Integer.parseInt(sdf.format(now));
+        Integer x = Integer.parseInt(sdf.format(after));
+
+        Integer sum = x - n;
+
+        System.out.println(sum);
     }
 }
