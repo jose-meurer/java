@@ -24,6 +24,8 @@ hs_err_pid*
 
 # Intellij
 .idea/
+.out/
 
 # Eclipse
 .bin/
+.metadata/
