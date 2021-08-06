@@ -21,7 +21,7 @@ public class Program {
 		list.add(new Product("HD Case", 80.90));
 		list.add(new Product("Cellphone", 287.0));
 
-		list.forEach(new PriceUpdate());
+		list.forEach(Product::staticPriceUpdate);
 
 		list.forEach(Program::test);
 		
