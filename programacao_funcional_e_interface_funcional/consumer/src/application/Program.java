@@ -23,12 +23,9 @@ public class Program {
 		list.add(new Product("Cellphone", 287.0));
 
 		double factor = 1.1;
-		Consumer<Product> cons = p -> p.setPrice(p.getPrice() * factor);
-
-		list.forEach(Product::priceUpdate);
+		list.forEach(p -> p.setPrice(p.getPrice() * factor));
 
 		list.forEach(Program::test);
-		
 	}
 
 	private static void test(Product p) {
