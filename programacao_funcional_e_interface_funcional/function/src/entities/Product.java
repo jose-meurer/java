@@ -30,6 +30,10 @@ public class Product {
         return p.getName().toUpperCase();
     }
 
+    public  String upperCaseName() {
+        return getName().toUpperCase();
+    }
+
     @Override
     public String toString() {
         return "Product{"
