@@ -1,6 +1,13 @@
 ### Meus estudos com Java
 
 
+#### Fluxo de processamento de uma stream:
+
+![image](https://www.oracle.com/technetwork/pt/images/java8-streams-3410045.png)
+
+
+
+
 #### Design Patterns Strategy:
 
 ![image](https://user-images.githubusercontent.com/75624436/121611330-606d1500-ca2e-11eb-9d6a-352a33698b6a.png)
